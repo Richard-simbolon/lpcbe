@@ -4,6 +4,8 @@
 @section('content')
 
 <div class="container home">
+    <img class="left-img" src="/img/left-home.png" alt="">
+    <img class="right-img" src="/img/right-home.png" alt="">
     <div class="d-flex align-items-center justify-content-between">
         <div class="d-flex align-items-center">
             <img width="35" height="28" class="mr-1" src="/img/jamu.png" alt="">

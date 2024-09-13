@@ -11109,7 +11109,7 @@ header {
 
 .home {
   background-color: #FEF200;
-  background-image: url("/img/index.png");
+  background-image: url("/img/background.png");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -11119,9 +11119,25 @@ header {
   position: relative;
 }
 
+.home .left-img {
+  width: 60px;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.home .right-img {
+  width: 60px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .form-page {
   background-color: #FEF200;
-  background-image: url("/img/form.png");
+  background-image: url("/img/background.png");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -11131,6 +11147,23 @@ header {
   min-height: 100vh;
   max-height: -moz-max-content;
   max-height: max-content;
+}
+
+.form-page .left-img {
+  width: 65px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 22;
+}
+
+.form-page .right-img {
+  width: 60px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .prod-ds {
