@@ -10,13 +10,13 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <header>
-        {{-- <div class="menu">
+    {{-- <header>
+        <div class="menu">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
-        </div> --}}
-    </header>
+        </div>
+    </header> --}}
     <main>
         @yield('content')
     </main>

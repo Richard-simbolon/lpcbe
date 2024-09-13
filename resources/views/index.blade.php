@@ -22,7 +22,7 @@
             </a>
         </div>
     </div>
-    <div class="copyright index">© 2024 LARUTAN PENYEGAR CAP BADAK. ALL RIGHTS RESERVED.</div>
+    <div class="copyright">© 2024 LARUTAN PENYEGAR CAP BADAK.<br>ALL RIGHTS RESERVED.</div>
 </div>
 
 @endsection
