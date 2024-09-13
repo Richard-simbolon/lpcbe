@@ -31,15 +31,7 @@
                             <div class="text-danger">{{ $message }}</div>
                         @enderror
                     </div>
-            
-                    <div class="mb-2">
-                        <label class="label sm" for="gender">Jenis Kelamin</label>
-                        <input type="text" id="gender" name="gender" class="form-control" placeholder="jenis kelamin" value="{{ old('gender') }}">
-                        @error('gender')
-                            <div class="text-danger">{{ $message }}</div>
-                        @enderror
-                    </div>
-            
+
                     <div class="mb-2">
                         <label class="label sm" for="email">Email</label>
                         <input type="email" id="email" name="email" class="form-control" placeholder="email" value="{{ old('email') }}">
@@ -47,7 +39,7 @@
                             <div class="text-danger">{{ $message }}</div>
                         @enderror
                     </div>
-        
+
                     <div class="mb-2">
                         <label class="label sm" for="phone">Nomor Handphone</label>
                         <input type="text" id="phone" name="phone" class="form-control" placeholder="telepon" value="{{ old('phone') }}">
@@ -55,7 +47,7 @@
                             <div class="text-danger">{{ $message }}</div>
                         @enderror
                     </div>
-            
+
                     <div class="mb-2">
                         <label class="label sm" for="address">Alamat</label>
                         <textarea id="address" name="address" placeholder="alamat" class="form-control" rows="5">{{ old('address') }}</textarea>
@@ -65,25 +57,9 @@
                     </div>
             
                     <div class="mb-2">
-                        <label class="label sm" for="username_id">Username ID</label>
-                        <input type="text" id="username_id" name="username_id" placeholder="username_id" class="form-control" value="{{ old('username_id') }}">
-                        @error('username_id')
-                            <div class="text-danger">{{ $message }}</div>
-                        @enderror
-                    </div>
-        
-                    <div class="mb-2">
-                        <label class="label sm" for="utm_campaign">UTM Campaign</label>
-                        <input type="text" id="utm_campaign" name="utm_campaign" placeholder="utm_campaign" class="form-control" value="{{ old('utm_campaign') }}">
-                        @error('utm_campaign')
-                            <div class="text-danger">{{ $message }}</div>
-                        @enderror
-                    </div>
-            
-                    <div>
-                        <label class="label sm" for="utm_source">UTM Source</label>
-                        <input type="text" id="utm_source" name="utm_source" placeholder="utm_source" class="form-control" value="{{ old('utm_source') }}">
-                        @error('utm_source')
+                        <label class="label sm" for="account">Instagram Account</label>
+                        <input type="text" id="account" name="account" placeholder="instagram account" class="form-control" value="{{ old('ig_account') }}">
+                        @error('ig_account')
                             <div class="text-danger">{{ $message }}</div>
                         @enderror
                     </div>

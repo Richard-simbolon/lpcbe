@@ -11118,16 +11118,14 @@ header {
   background-position: top center;
   background-size: cover;
   padding-top: 15px;
-  height: -moz-fit-content;
-  height: fit-content;
-  min-height: 100vh;
-  max-height: -moz-max-content;
-  max-height: max-content;
+  height: calc(100vh - 15px);
+  overflow: hidden;
+  position: relative;
 }
 
 .form-page {
   background-color: #FEF200;
-  background-image: url("/img/form.png");
+  background-image: url("/img/bg_form-min.png");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -11141,11 +11139,13 @@ header {
 
 .prod-ds {
   width: 70%;
-  margin: -30px auto 25px;
   background-color: transparent;
   height: -moz-fit-content;
   height: fit-content;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .prod-ds .box-lg {
@@ -11253,5 +11253,12 @@ header {
   font-weight: 400;
   text-align: center;
   padding: 30px 0;
+}
+
+.copyright.index {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
