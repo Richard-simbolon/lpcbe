@@ -3,13 +3,13 @@
 
 @section('content')
 
-<div class="container home">
+<div class="home">
     <img class="left-img" src="/img/left-home.png" alt="">
     <img class="right-img" src="/img/right-home.png" alt="">
     <div class="d-flex align-items-center justify-content-between">
         <div class="d-flex align-items-center">
             <img width="35" height="28" class="mr-1" src="/img/jamu.png" alt="">
-            <img width="20" height="30" src="/img/halal.png" alt="">
+            <img width="16" height="28" src="/img/halal.png" alt="">
         </div>
         <img width="50" height="35" src="/img/badak.png" alt="">
     </div>

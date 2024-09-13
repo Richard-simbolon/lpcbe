@@ -3,13 +3,13 @@
 
 @section('content')
 
-<div class="container form-page">
+<div class="form-page">
     <img class="left-img" src="/img/left-form.png" alt="">
     <img class="right-img" src="/img/right-form.png" alt="">
     <div class="d-flex align-items-center justify-content-between">
         <div class="d-flex align-items-center">
             <img width="35" height="28" class="mr-1" src="/img/jamu.png" alt="">
-            <img width="20" height="30" src="/img/halal.png" alt="">
+            <img width="16" height="28" src="/img/halal.png" alt="">
         </div>
         <img width="50" height="35" src="/img/badak.png" alt="">
     </div>

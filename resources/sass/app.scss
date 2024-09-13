@@ -178,6 +178,7 @@ header{
     height: 100vh;
     overflow: hidden;
     position: relative;
+    padding: 0 15px;
     .left-img{
         width: 60px;
         position: absolute;
@@ -202,7 +203,8 @@ header{
     padding-top: 15px;
     height: fit-content;
     min-height: 100vh;
-    max-height: max-content;  
+    max-height: max-content; 
+    padding: 15px;
     .left-img{
         width: 65px;
         position: absolute;
@@ -320,3 +322,4 @@ header{
     left: 50%;
     transform: translateX(-50%);
 }
+
