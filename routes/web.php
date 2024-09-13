@@ -16,12 +16,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index'); 
+});
+Route::get('/form', function () {
+    return view('form');
+});
+Route::get('/survey', function () {
+    return view('survey'); 
 });
 
 Auth::routes();
 
-Route::get('/admin', 'AdminController@index')->name('adminHome');
+Route::get('/dashboard', 'AdminController@index')->name('adminHome');
 
 Route::get('leads', [AdminController::class, 'index']);
 Route::get('leads-data', [AdminController::class, 'getLeadsData'])->name('leads.data');

@@ -1,8 +1,291 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 // Variables
 @import 'variables';
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    top: 0;
+    z-index: 22;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: #3ECA81;
+}
+.container{
+    margin-top: 30px;
+}
+.menu{
+    width: 15px;
+    margin-left: 25px;
+    .line{
+        width: 100%;
+        background-color: #C1E8B9;
+        border-radius: 1px;
+        height: 2px;
+        margin-bottom: 2px;
+    }
+}
+.s-form{
+    background-image: url('/img/survey-bg.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding-top: 15px;
+    height: fit-content;
+    min-height: 100vh;
+    max-height: max-content; 
+}
+.main-logo{
+    margin-top: -60px;
+}
+.pre-launch{
+    margin-bottom: 50px;
+}
+.rounded-box{
+    background-color: #fff;
+    padding: 18px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(112, 114, 109, 0.8),
+    0 0 0 rgba(255, 255, 255, 0); 
+}
+.form-group{
+    &.rounded-box{
+        margin-bottom: 20px;
+        input{
+            border: none;
+            background-color: #F7F7F7;
+            color: #70726D;
+            &::placeholder{
+                color: rgba(115, 117, 112, .4);
+                font-weight: 300;
+                font-size: 10.5px;
+            }
+        }
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px 12px;
+            font-size: 10.5px;
+            font-weight: 400;
+        }
+        .d-flex{
+            &.flex-column{
+                .custom-radio{
+                    &:not(&:last-child){
+                        margin-bottom: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+.label{
+    font-size: 12px;
+    color: #70726D;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+    &.sm{
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+}
+.field{
+    font-size: 10.5px;
+    color: #70726D;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.custom-radio {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 10.5px;
+    color: #70726D;
+}
+.custom-radio {
+    input[type="radio"] {
+        opacity: 0;
+        position: absolute;
+        z-index: 11;
+        width: 100px;
+    }
+    .radio-checkmark {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #F7F7F7;
+        border-radius: 50%;
+        margin-right: 8px;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+        }
+    }
+    input[type="radio"]:checked + .radio-checkmark {
+        background-color: #F7F7F7;
+        &::after {
+            opacity: 1;
+            background-color: #4FDC92;
+        }
+    }
+}
+.btn{
+    font-size: 11px;
+    font-weight: 600;
+    padding: 8px 25px;
+    border-radius: 25px;
+    text-wrap: nowrap;
+    &.btn-light-green{
+        color: #FFFFFF;
+        background-color: #4FDC92;
+        border: none;
+    }
+    &.btn-border-light-green{
+        color: #4FDC92;
+        background-color: transparent;
+        border: 2px solid #4FDC92;
+    }
+}
+.home{
+    background-color: #FEF200;
+    background-image: url('/img/index.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding-top: 15px;
+    height: fit-content;
+    min-height: 100vh;
+    max-height: max-content;  
+}
+.form-page{
+    background-color: #FEF200;
+    background-image: url('/img/form.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding-top: 15px;
+    height: fit-content;
+    min-height: 100vh;
+    max-height: max-content;  
+}
+.prod-ds{
+    width: 70%;
+    margin: -30px auto 25px;
+    background-color: transparent;
+    height: fit-content;
+    position: relative;
+    .box-lg{
+        width: 100%;
+        height: 85%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        padding: 15px;
+        border-radius: 18px;
+        background-color: rgba( 255, 255, 255, .6);
+    }
+    img{
+        display: flex;
+        width: 75px;
+        margin: 0 auto;
+        z-index: 2;
+        position: relative;
+    }
+    .box-white{
+        position: relative;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 18px;
+        background-color: #fff;
+        z-index: 2;
+    }
+    .product-nm{
+        font-size: 11px;
+        font-weight: 700;
+        color: #70726D;
+        margin: 10px 0 20px;
+        text-align: center;
+    }
+}
+.form-fill{
+    width: 70%;
+    padding-top: 160px;
+    margin: -40px auto 50px;
+    background-color: transparent;
+    height: fit-content;
+    position: relative;
+    .img-absolute{
+        display: flex;
+        width: 350px;
+        margin: 0 auto;
+        z-index: 2;
+        top: 0;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .form{
+        padding-top: 70px;
+        textarea{
+            border: none;
+            background-color: #F7F7F7;
+            color: #70726D;
+            font-size: 10.5px;
+            font-weight: 400;
+            &::placeholder{
+                color: rgba(115, 117, 112, .4);
+                font-weight: 300;
+                font-size: 10.5px;
+            }
+        }
+        .btn-light-green{
+            width: 100%;
+            margin-top: 50px;
+        }
+    }
+}
+
+.disclaimer{
+    color: #70726D;
+    font-weight: 400;
+    font-size: 11px;
+    display: block;
+    text-align: center;
+    text-wrap: nowrap;
+    margin-bottom: 20px;
+}
+.copyright{
+    width: 100%;
+    color: #34837C;
+    font-size: 9.5px;
+    font-weight: 400;
+    text-align: center;
+    padding: 30px 0;
+}

@@ -33,7 +33,7 @@
             <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
                 <!-- Sidebar - Brand -->
-                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/admin">
+                <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/dashboard">
                     <div class="sidebar-brand-icon rotate-n-15">
                         <img src="{{asset('img/logo.png')}}" style="width: 150px;" alt="">
                     </div>
@@ -45,7 +45,7 @@
 
                 <!-- Nav Item - Dashboard -->
                 <li class="nav-item active">
-                    <a class="nav-link" href="/admin">
+                    <a class="nav-link" href="/dashboard">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
                         <span>Dashboard</span></a>
                 </li>
@@ -78,7 +78,7 @@
                     
                 </li>
             </ul>
-            <main class="py-4">
+            <main class="py-4 w-100">
                 @yield('content')
             </main>
         </div>
