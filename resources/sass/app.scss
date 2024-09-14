@@ -591,7 +591,8 @@ header{
             }
             .right-img{
                 right: 320px;
-                width: 80px;
+                width: 70px;
+                top: 100px;
             }
             .form-fill{
                 &.end{
@@ -627,6 +628,7 @@ header{
             width: 500px!important;
         }
         .prod-ds{
+            top: 60%;
             width: 25%;
             img{
                 width: 50px;

@@ -11594,7 +11594,8 @@ header {
 
   .home.end .right-img {
     right: 320px;
-    width: 80px;
+    width: 70px;
+    top: 100px;
   }
 
   .home.end .form-fill.end {
@@ -11634,6 +11635,7 @@ header {
   }
 
   .home .prod-ds {
+    top: 60%;
     width: 25%;
   }
 
