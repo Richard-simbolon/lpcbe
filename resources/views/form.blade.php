@@ -66,7 +66,7 @@
                         @enderror
                     </div>
 
-                    <button class="btn btn-light-green">SEND</button>
+                    <button class="btn btn-light-green">KIRIM</button>
             </form>
         </div>
     </div>

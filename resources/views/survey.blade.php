@@ -21,7 +21,7 @@
                 <span class="label">Pre Launch Survey</span>
                 <label class="field" for="email">pramudika@gmail.com</label>
             </div>
-            <button type="button" class="btn btn-border-light-green">Ganti Account</button>
+            <button type="button" class="btn btn-border-light-green">Ganti Akun</button>
         </div>
 
         <div class="form-group rounded-box">
