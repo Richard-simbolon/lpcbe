@@ -44,11 +44,21 @@
         <img class="main-logo w-100" src="/img/main-logo.png" alt="">
         <div class="prod-ds">
             <div class="box-lg"></div>
-            <img src="/img/product-1.png" alt="">
+            <img class="form" src="/img/product-1.png" alt="">
             <div class="box-white">
                 <span class="product-nm">Larutan Penyegar Cap Badak Legacy</span>
                 <a class="w-100" href="/form">
                     <button class="w-100 btn btn-light-green">Isi Form</button>
+                </a>
+            </div>
+        </div>
+        <div class="prod-ds survey">
+            <div class="box-lg"></div>
+            <img class="survey" src="/img/dummy.png" alt="">
+            <div class="box-white">
+                <span class="product-nm">Larutan Penyegar Cap Badak EZ</span>
+                <a class="w-100" href="/survey">
+                    <button class="w-100 btn btn-light-green">Ikuti Survey</button>
                 </a>
             </div>
         </div>
