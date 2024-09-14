@@ -17,7 +17,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index'); 
-});
+})->name('index');
+
+Route::get('/success', function () {
+    return view('index'); 
+})->name('leads.success');
+
 Route::get('/form', function () {
     return view('form');
 });

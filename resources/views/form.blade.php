@@ -60,8 +60,8 @@
             
                     <div class="mb-2">
                         <label class="label sm" for="account">Instagram Account</label>
-                        <input type="text" id="account" name="account" placeholder="instagram account" class="form-control" value="{{ old('ig_account') }}">
-                        @error('ig_account')
+                        <input type="text" id="account" name="username_id" placeholder="instagram account" class="form-control" value="{{ old('username_id') }}">
+                        @error('username_id')
                             <div class="text-danger">{{ $message }}</div>
                         @enderror
                     </div>
