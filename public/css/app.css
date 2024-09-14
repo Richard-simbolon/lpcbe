@@ -11467,13 +11467,15 @@ header {
   }
 
   .home .left-img {
-    width: 75px;
+    width: 85px;
     left: 300px;
+    top: 50px;
   }
 
   .home .right-img {
-    width: 75px;
+    width: 80px;
     right: 300px;
+    top: 20px;
   }
 
   .home .product-nm {
