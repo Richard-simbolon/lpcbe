@@ -11482,13 +11482,11 @@ header {
   .home .left-img {
     width: 70px;
     left: 110px;
-    top: 60px;
   }
 
   .home .right-img {
     width: 65px;
     right: 100px;
-    top: 20px;
   }
 
   .home .product-nm {
@@ -11615,13 +11613,13 @@ header {
   .home .left-img {
     width: 85px;
     left: 300px;
-    top: 50px;
+    top: 250px;
   }
 
   .home .right-img {
     width: 80px;
     right: 300px;
-    top: 20px;
+    top: 250px;
   }
 
   .home .product-nm {
