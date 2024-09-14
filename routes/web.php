@@ -30,7 +30,12 @@ Route::get('/survey', function () {
     return view('survey'); 
 });
 
+
 Auth::routes();
+
+Route::get('/register', function () {
+    return "";
+});
 
 Route::get('/dashboard', 'AdminController@index')->name('adminHome');
 

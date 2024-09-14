@@ -20,7 +20,7 @@
             <img class="img-end" src="/img/product-2.png" alt="">
             <div class="form form-group rounded-box">
                 <span class="disclaimer">
-                    Terima kasih telah mengisi survei Larutan Penyegar Cap Kaki Badak.
+                    Terima kasih telah mengisi survei Larutan Penyegar Cap Badak.
                     Pendapat Anda sangat berarti bagi kami! 
                 </span>
                 <a href="/">
