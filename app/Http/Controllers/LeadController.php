@@ -22,8 +22,8 @@ class LeadController extends Controller
             'phone' => 'required|string|max:13',
             'address' => 'required|string',
             'username_id' => 'required|string|max:100',
-            'utm_campaign' => 'required|string|max:100',
-            'utm_source' => 'required|string|max:100',
+            // 'utm_campaign' => 'required|string|max:100',
+            // 'utm_source' => 'required|string|max:100',
         ]);
 
         if ($validator->fails()) {
@@ -32,6 +32,6 @@ class LeadController extends Controller
 
         Lead::create($request->all());
 
-        return redirect()->route('leads.create')->with('success', 'Lead created successfully.');
+        return redirect()->route('leads.success')->with('success', 'Lead created successfully.');
     }
 }
