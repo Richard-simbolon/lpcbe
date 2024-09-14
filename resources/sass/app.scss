@@ -49,6 +49,9 @@ header{
     width: 50px;
     height: 35px;
 }
+.text-primary-dark{
+    color: #70726D;
+}
 .s-form{
     background-image: url('/img/survey-bg.png');
     background-repeat: no-repeat;
@@ -229,7 +232,7 @@ header{
         z-index: 22;
     }
     .right-img{
-        width: 60px;
+        width: 50px;
         position: absolute;
         right: 10px;
         top: 50%;
@@ -379,7 +382,7 @@ header{
             }
             .btn-light-green{
                 width: 50%;
-                height: 50px;
+                height: 47px;
                 border-radius: 40px;
                 margin: 50px auto 0;
                 display: flex;
@@ -388,6 +391,7 @@ header{
                 font-size: 14px;
             }
             textarea{
+                font-size: 14px;
                 &::placeholder{
                     font-weight: 400;
                     font-size: 14px;
@@ -409,7 +413,7 @@ header{
         }
         .btn-light-green{
             width: 50%;
-            height: 50px;
+            height: 47px;
             border-radius: 40px;
             margin: 50px auto 0;
             display: flex;
@@ -437,7 +441,7 @@ header{
             }
             input[type="text"],
             input[type="email"] {
-                padding: 25px 15px;
+                padding: 15px;
                 font-size: 14px;
                 font-weight: 400;
             }
@@ -445,12 +449,6 @@ header{
     }
     .disclaimer{
         font-size: 16px;
-    }
-    .form-group{
-        &.rounded-box{
-            width: 50%;
-            margin: 0 auto 20px;
-        }
     }
     .label{
         font-size: 16px;
@@ -471,9 +469,19 @@ header{
         margin: 0 auto;
         .btn-light-green{
             width: 200px;
-            height: 50px;
+            height: 47px;
             border-radius: 40px;
             font-size: 14px;
+        }
+    }
+    .s-form{
+        form{
+            .form-group{
+                &.rounded-box{
+                    width: 50%;
+                    margin: 0 auto 20px;
+                }
+            }
         }
     }
 }

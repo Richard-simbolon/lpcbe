@@ -342,7 +342,7 @@
         </div>
 
         <div class="d-flex align-items-center justify-content-between bottom-survey" style="padding: 50px 0 100px">
-            <span class="field text-white">Kosongkan Formulir</span>
+            <span class="field text-primary-dark">Kosongkan Formulir</span>
             <button type="submit" class="btn btn-light-green">Submit</button>
         </div>
     </form>

@@ -28,7 +28,7 @@
                 @csrf
                     <div class="mb-2 mb-md-4">
                         <label class="label sm" for="name">Nama</label>
-                        <input type="text" id="name" name="name" class="form-control" placeholder="Ketik Nama Anda" value="{{ old('name') }}">
+                        <input type="text" id="name" name="name" placeholder="Ketik Nama Anda" value="{{ old('name') }}">
                         @error('name')
                             <div class="text-danger">{{ $message }}</div>
                         @enderror
@@ -36,7 +36,7 @@
 
                     <div class="mb-2 mb-md-4">
                         <label class="label sm" for="email">Email</label>
-                        <input type="email" id="email" name="email" class="form-control" placeholder="Ketik Email Anda" value="{{ old('email') }}">
+                        <input type="email" id="email" name="email" placeholder="Ketik Email Anda" value="{{ old('email') }}">
                         @error('email')
                             <div class="text-danger">{{ $message }}</div>
                         @enderror
@@ -44,7 +44,7 @@
 
                     <div class="mb-2 mb-md-4">
                         <label class="label sm" for="phone">Nomor Handphone</label>
-                        <input type="text" id="phone" name="phone" class="form-control" placeholder="Ketik No Telepon Anda" value="{{ old('phone') }}">
+                        <input type="text" id="phone" name="phone" placeholder="Ketik No Telepon Anda" value="{{ old('phone') }}">
                         @error('phone')
                             <div class="text-danger">{{ $message }}</div>
                         @enderror
@@ -60,7 +60,7 @@
             
                     <div class="mb-2 mb-md-4">
                         <label class="label sm" for="account">Instagram Account</label>
-                        <input type="text" id="account" name="account" placeholder="Ketik ID Instagram" class="form-control" value="{{ old('ig_account') }}">
+                        <input type="text" id="account" name="account" placeholder="Ketik ID Instagram" value="{{ old('ig_account') }}">
                         @error('ig_account')
                             <div class="text-danger">{{ $message }}</div>
                         @enderror

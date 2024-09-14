@@ -10973,6 +10973,10 @@ header {
   height: 35px;
 }
 
+.text-primary-dark {
+  color: #70726D;
+}
+
 .s-form {
   background-image: url("/img/survey-bg.png");
   background-repeat: no-repeat;
@@ -11179,7 +11183,7 @@ header {
 }
 
 .form-page .right-img {
-  width: 60px;
+  width: 50px;
   position: absolute;
   right: 10px;
   top: 50%;
@@ -11355,12 +11359,16 @@ header {
 
   .form-page .form-fill .btn-light-green {
     width: 50%;
-    height: 50px;
+    height: 47px;
     border-radius: 40px;
     margin: 50px auto 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 14px;
+  }
+
+  .form-page .form-fill textarea {
     font-size: 14px;
   }
 
@@ -11390,7 +11398,7 @@ header {
 
   .home .btn-light-green {
     width: 50%;
-    height: 50px;
+    height: 47px;
     border-radius: 40px;
     margin: 50px auto 0;
     display: flex;
@@ -11423,18 +11431,13 @@ header {
 
   .form-group.rounded-box input[type=text],
   .form-group.rounded-box input[type=email] {
-    padding: 25px 15px;
+    padding: 15px;
     font-size: 14px;
     font-weight: 400;
   }
 
   .disclaimer {
     font-size: 16px;
-  }
-
-  .form-group.rounded-box {
-    width: 50%;
-    margin: 0 auto 20px;
   }
 
   .label {
@@ -11463,9 +11466,14 @@ header {
 
   .bottom-survey .btn-light-green {
     width: 200px;
-    height: 50px;
+    height: 47px;
     border-radius: 40px;
     font-size: 14px;
+  }
+
+  .s-form form .form-group.rounded-box {
+    width: 50%;
+    margin: 0 auto 20px;
   }
 }
 
