@@ -11158,14 +11158,14 @@ header {
 .home.end .left-img {
   width: 90px;
   left: 5px;
-  top: 70px;
+  top: 125px;
   z-index: 22;
 }
 
 .home.end .right-img {
   width: 65px;
   right: 10px;
-  top: 70px;
+  top: 140px;
 }
 
 .form-page {
@@ -11380,7 +11380,143 @@ header {
   }
 }
 
-@media (min-width: 825px) {
+@media (min-width: 768px) {
+  .img-jamu {
+    width: 72px;
+    height: 60px;
+  }
+
+  .img-halal {
+    width: 42px;
+    height: 60px;
+  }
+
+  .img-badak {
+    width: 105px;
+    height: 70px;
+  }
+
+  .form-page .left-img {
+    width: 150px;
+    left: 40px;
+    top: 350px;
+  }
+
+  .form-page .right-img {
+    width: 120px;
+    top: 400px;
+    right: 70px;
+  }
+
+  .form-page .form-fill {
+    width: 50%;
+    padding-top: 200px;
+  }
+
+  .form-page .form-fill .img-absolute {
+    width: 400px;
+  }
+
+  .form-page .form-fill .label.sm {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .form-page .form-fill .btn-light-green {
+    width: 50%;
+    height: 47px;
+    border-radius: 40px;
+    margin: 50px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .form-page .form-fill textarea {
+    font-size: 14px;
+  }
+
+  .form-page .form-fill textarea::-moz-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .form-page .form-fill textarea::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .home .main-logo {
+    display: flex;
+    margin: -60px auto 0;
+  }
+
+  .home.end .left-img {
+    left: 80px;
+    top: 120px;
+  }
+
+  .home.end .right-img {
+    right: 95px;
+  }
+
+  .home.end .form-fill.end {
+    padding-top: 140px;
+    width: 50%;
+  }
+
+  .home .left-img {
+    width: 70px;
+    left: 110px;
+    top: 60px;
+  }
+
+  .home .right-img {
+    width: 65px;
+    right: 100px;
+    top: 20px;
+  }
+
+  .home .product-nm {
+    font-size: 16px;
+  }
+
+  .home .btn-light-green {
+    width: 50%;
+    height: 47px;
+    border-radius: 40px;
+    margin: 50px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .home .main-logo {
+    width: 500px !important;
+  }
+
+  .home .prod-ds {
+    top: 30%;
+    width: 35%;
+  }
+
+  .home .prod-ds img {
+    width: 50px;
+  }
+
+  .s-form form {
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .copyright {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1025px) {
   .img-jamu {
     width: 100px;
     height: 72px;
@@ -11560,6 +11696,10 @@ header {
   .s-form form .form-group.rounded-box {
     width: 50%;
     margin: 0 auto 20px;
+  }
+
+  .copyright {
+    font-size: 14px;
   }
 }
 

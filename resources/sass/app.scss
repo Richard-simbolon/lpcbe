@@ -212,13 +212,13 @@ header{
         .left-img{
             width: 90px;
             left: 5px;
-            top: 70px;
+            top: 125px;
             z-index: 22;
         }
         .right-img{
             width: 65px;
             right: 10px;
-            top: 70px;
+            top: 140px;
         }
     }
 }
@@ -406,7 +406,126 @@ header{
     }
 }
 
-@media (min-width: 825px) {
+@media (min-width: 768px) {
+    .img-jamu{
+        width: 72px;
+        height: 60px
+    }
+    .img-halal{
+        width: 42px;
+        height: 60px;
+    }
+    .img-badak{
+        width: 105px;
+        height: 70px;
+    }
+    .form-page{
+        .left-img{
+            width: 150px;
+            left: 40px;
+            top: 350px;
+        }
+        .right-img{
+            width: 120px;
+            top: 400px;
+            right: 70px
+        }
+        .form-fill{
+            width: 50%;
+            padding-top: 200px;
+            .img-absolute{
+                width: 400px;
+            }
+            .label{
+                &.sm{
+                    font-size: 14px;
+                    margin-bottom: 12px;
+                }
+            }
+            .btn-light-green{
+                width: 50%;
+                height: 47px;
+                border-radius: 40px;
+                margin: 50px auto 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+            }
+            textarea{
+                font-size: 14px;
+                &::placeholder{
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .home{
+        .main-logo{
+            display: flex;
+            margin: -60px auto 0;
+        }
+        &.end{
+            .left-img{
+                left: 80px;
+                top: 120px;
+            }
+            .right-img{
+                right: 95px;
+            }
+            .form-fill{
+                &.end{
+                    padding-top: 140px;
+                    width: 50%;
+                }
+            }
+        }
+        .left-img{
+            width: 70px;
+            left: 110px;
+            top: 60px;
+        }
+        .right-img{
+            width: 65px;
+            right: 100px;
+            top: 20px;
+        }
+        .product-nm{
+            font-size: 16px;
+        }
+        .btn-light-green{
+            width: 50%;
+            height: 47px;
+            border-radius: 40px;
+            margin: 50px auto 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+        .main-logo{
+            width: 500px!important;
+        }
+        .prod-ds{
+            top: 30%;
+            width: 35%;
+            img{
+                width: 50px;
+            }
+        }
+    }
+    .s-form{
+        form{
+            width: 75%;
+            margin: 0 auto;
+        }
+    }
+    .copyright{
+        font-size: 13px;
+    }
+}
+@media (min-width: 1025px) {
     .img-jamu{
         width: 100px;
         height: 72px;
@@ -566,5 +685,8 @@ header{
                 }
             }
         }
+    }
+    .copyright{
+        font-size: 14px;
     }
 }
