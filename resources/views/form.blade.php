@@ -59,7 +59,7 @@
                     </div>
             
                     <div class="mb-2 mb-md-4">
-                        <label class="label sm" for="account">Instagram Account</label>
+                        <label class="label sm" for="account">Akun Instagram</label>
                         <input type="text" id="account" name="username_id" placeholder="Ketik ID Instagram" class="form-control" value="{{ old('username_id') }}">
                         @error('username_id')
                             <div class="text-danger">{{ $message }}</div>
