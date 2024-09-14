@@ -8,10 +8,10 @@
     <img class="right-img" src="/img/right-home.png" alt="">
     <div class="d-flex align-items-center justify-content-between">
         <div class="d-flex align-items-center">
-            <img width="35" height="28" class="mr-1" src="/img/jamu.png" alt="">
-            <img width="16" height="28" src="/img/halal.png" alt="">
+            <img class="img-jamu" class="mr-1" src="/img/jamu.png" alt="">
+            <img class="img-halal" src="/img/halal.png" alt="">
         </div>
-        <img width="50" height="35" src="/img/badak.png" alt="">
+        <img class="img-badak" src="/img/badak.png" alt="">
     </div>
     <img class="main-logo w-100" src="/img/main-logo.png" alt="">
     <div class="prod-ds">
@@ -24,7 +24,7 @@
             </a>
         </div>
     </div>
-    <div class="copyright">© 2024 LARUTAN PENYEGAR CAP BADAK.<br>ALL RIGHTS RESERVED.</div>
+    <div class="copyright">© 2024 LARUTAN PENYEGAR CAP BADAK. ALL RIGHTS RESERVED.</div>
 </div>
 
 @endsection

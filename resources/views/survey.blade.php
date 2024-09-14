@@ -3,13 +3,13 @@
 
 @section('content')
 
-<div class="container s-form">
+<div class="s-form">
     <div class="d-flex align-items-center justify-content-between">
         <div class="d-flex align-items-center">
-            <img width="35" height="28" class="mr-1" src="/img/jamu.png" alt="">
-            <img width="16" height="28" src="/img/halal.png" alt="">
+            <img class="img-jamu" class="mr-1" src="/img/jamu.png" alt="">
+            <img class="img-halal" src="/img/halal.png" alt="">
         </div>
-        <img width="50" height="35" src="/img/badak.png" alt="">
+        <img class="img-badak" src="/img/badak.png" alt="">
     </div>
     <img class="main-logo w-100" src="/img/main-logo.png" alt="">
     {{-- <h1 class="text-6xl font-bold underline text-clifford">Create Lead</h1> --}}
@@ -17,7 +17,7 @@
     <form action="{{ route('leads.store') }}" method="POST">
         @csrf
         <div class="pre-launch form-group rounded-box d-flex align-items-center justify-content-between mb-14">
-            <div>
+            <div class="d-flex flex-column">
                 <span class="label">Pre Launch Survey</span>
                 <label class="field" for="email">pramudika@gmail.com</label>
             </div>
@@ -341,7 +341,7 @@
             @enderror
         </div>
 
-        <div class="d-flex align-items-center justify-content-between" style="padding: 50px 0 100px">
+        <div class="d-flex align-items-center justify-content-between bottom-survey" style="padding: 50px 0 100px">
             <span class="field text-white">Kosongkan Formulir</span>
             <button type="submit" class="btn btn-light-green">Submit</button>
         </div>

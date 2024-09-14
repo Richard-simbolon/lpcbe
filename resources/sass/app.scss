@@ -37,6 +37,18 @@ header{
         margin-bottom: 2px;
     }
 }
+.img-jamu{
+    width: 35px;
+    height: 28px;
+}
+.img-halal{
+    width: 16px;
+    height: 28px;
+}
+.img-badak{
+    width: 50px;
+    height: 35px;
+}
 .s-form{
     background-image: url('/img/survey-bg.png');
     background-repeat: no-repeat;
@@ -46,6 +58,8 @@ header{
     height: fit-content;
     min-height: 100vh;
     max-height: max-content; 
+    padding: 15px;
+    position: relative;
 }
 .main-logo{
     margin-top: -60px;
@@ -205,6 +219,7 @@ header{
     min-height: 100vh;
     max-height: max-content; 
     padding: 15px;
+    position: relative;
     .left-img{
         width: 65px;
         position: absolute;
@@ -323,3 +338,142 @@ header{
     transform: translateX(-50%);
 }
 
+@media (min-width: 825px) {
+    .img-jamu{
+        width: 100px;
+        height: 72px;
+    }
+    .img-halal{
+        width: 40px;
+        height: 65px;
+    }
+    .img-badak{
+        width: 130px;
+        height: 100px;
+    }
+    .main-logo{
+        width: 800px !important;
+        margin: -100px auto 0;
+        display: flex;
+    }
+    .form-page{
+        .left-img{
+            width: 125px;
+            left: 150px;
+        }
+        .right-img{
+            width: 100px;
+            right: 150px;
+        }
+        .form-fill{
+            width: 50%;
+            padding-top: 200px;
+            .img-absolute{
+                width: 400px;
+            }
+            .label{
+                &.sm{
+                    font-size: 14px;
+                    margin-bottom: 12px;
+                }
+            }
+            .btn-light-green{
+                width: 50%;
+                height: 50px;
+                border-radius: 40px;
+                margin: 50px auto 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+            }
+            textarea{
+                &::placeholder{
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .home{
+        .left-img{
+            width: 75px;
+            left: 300px;
+        }
+        .right-img{
+            width: 75px;
+            right: 300px;
+        }
+        .product-nm{
+            font-size: 16px;
+        }
+        .btn-light-green{
+            width: 50%;
+            height: 50px;
+            border-radius: 40px;
+            margin: 50px auto 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+        .main-logo{
+            width: 500px!important;
+        }
+        .prod-ds{
+            width: 25%;
+            img{
+                width: 50px;
+            }
+        }
+    }
+    .form-group{
+        &.rounded-box{
+            input{
+                &::placeholder{
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+            }
+            input[type="text"],
+            input[type="email"] {
+                padding: 25px 15px;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+    .disclaimer{
+        font-size: 16px;
+    }
+    .form-group{
+        &.rounded-box{
+            width: 50%;
+            margin: 0 auto 20px;
+        }
+    }
+    .label{
+        font-size: 16px;
+    }
+    .field, .custom-radio{
+        font-size: 14px;
+    }
+    .custom-radio, .radio-checkmark, input[type="radio"]{
+        cursor: pointer;
+    }
+    .custom-radio {
+        input[type="radio"] {
+            width: 200px;
+        }
+    }
+    .bottom-survey{
+        width: 50%;
+        margin: 0 auto;
+        .btn-light-green{
+            width: 200px;
+            height: 50px;
+            border-radius: 40px;
+            font-size: 14px;
+        }
+    }
+}
