@@ -192,7 +192,9 @@ header{
     background-position: top center;
     background-size: cover;
     padding-top: 15px;
-    height: 100vh;
+    height: fit-content;
+    min-height: 100vh;
+    max-height: max-content; 
     overflow: hidden;
     position: relative;
     padding: 15px;
@@ -250,12 +252,15 @@ header{
 }
 .prod-ds{
     width: 70%;
+    margin: 0 auto 50px;
     background-color: transparent;
     height: fit-content;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    &.survey{
+        .box-white{
+            margin-top: 30px;
+        }
+    }
     .box-lg{
         width: 100%;
         height: 85%;
@@ -269,10 +274,15 @@ header{
     }
     img{
         display: flex;
-        width: 75px;
         margin: 0 auto;
         z-index: 2;
         position: relative;
+        &.form{
+            width: 75px;
+        }
+        &.survey{
+            width: 150px;
+        }
     }
     .box-white{
         position: relative;
@@ -484,12 +494,10 @@ header{
         .left-img{
             width: 70px;
             left: 110px;
-            top: 60px;
         }
         .right-img{
             width: 65px;
             right: 100px;
-            top: 20px;
         }
         .product-nm{
             font-size: 16px;
@@ -510,9 +518,6 @@ header{
         .prod-ds{
             top: 30%;
             width: 35%;
-            img{
-                width: 50px;
-            }
         }
     }
     .s-form{
@@ -604,12 +609,12 @@ header{
         .left-img{
             width: 85px;
             left: 300px;
-            top: 50px;
+            top: 250px;
         }
         .right-img{
             width: 80px;
             right: 300px;
-            top: 20px;
+            top: 250px;
         }
         .product-nm{
             font-size: 16px;
@@ -630,9 +635,6 @@ header{
         .prod-ds{
             top: 60%;
             width: 25%;
-            img{
-                width: 50px;
-            }
         }
     }
     .form-group{
