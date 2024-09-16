@@ -37,8 +37,10 @@ Route::get('/register', function () {
 });
 
 Route::get('/dashboard', 'AdminController@index')->name('adminHome');
+Route::get('/admin/survey', 'AdminController@survey')->name('adminSurvey');
 
 Route::get('leads', [AdminController::class, 'index']);
+
 Route::get('leads-data', [AdminController::class, 'getLeadsData'])->name('leads.data');
 
 
