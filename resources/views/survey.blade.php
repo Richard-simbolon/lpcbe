@@ -25,6 +25,30 @@
         </div>
 
         <div class="form-group rounded-box">
+            <label class="label" for="nama">Nama</label>
+            <input type="text" name="form-1" placeholder="Nama" value="{{ old('nama') }}">
+            @error('nama')
+                <div class="text-danger">{{ $message }}</div>
+            @enderror
+        </div>
+
+        <div class="form-group rounded-box">
+            <label class="label" for="nama">No HP</label>
+            <input type="text" name="form-1" placeholder="No Handphone" value="{{ old('number') }}">
+            @error('number')
+                <div class="text-danger">{{ $message }}</div>
+            @enderror
+        </div>
+
+        <div class="form-group rounded-box">
+            <label class="label" for="email">Email</label>
+            <input type="email" name="form-1" placeholder="Email" value="{{ old('email') }}">
+            @error('email')
+                <div class="text-danger">{{ $message }}</div>
+            @enderror
+        </div>
+
+        <div class="form-group rounded-box">
             <label class="label" for="gender">Jenis Kelamin</label>
             <div class="d-flex flex-column">
                 <div class="custom-radio">
@@ -245,9 +269,9 @@
         </div>
 
         <div class="form-group rounded-box">
-            <label class="label" for="rate-4">Tingkat Rasa Leci</label>
+            <label class="label" for="rate-4">Tingkat Rasa Buah</label>
             <div class="d-flex align-items-center justify-content-between">
-                <span class="field mr-1">Kurang Rasa Leci</span>
+                <span class="field mr-1">Kurang Rasa Buah</span>
                 <div class="custom-radio mr-2">
                     <input type="radio" name="rate-4" value="{{ old('rate-4') }}">
                     <span class="radio-checkmark"></span>
@@ -268,7 +292,7 @@
                     <span class="radio-checkmark"></span>
                     4
                 </div>
-                <span class="field">Terlalu Banyak Rasa Leci</span>
+                <span class="field">Terlalu Banyak Rasa Buah</span>
             </div>
             @error('rate-4')
                 <div class="text-danger">{{ $message }}</div>
@@ -306,7 +330,7 @@
             @enderror
         </div>
 
-        <div class="form-group rounded-box">
+        {{-- <div class="form-group rounded-box">
             <label class="label" for="rate-6">Random</label>
             <div class="d-flex align-items-center justify-content-between">
                 <div class="custom-radio mr-2">
@@ -323,7 +347,7 @@
             @error('rate-6')
                 <div class="text-danger">{{ $message }}</div>
             @enderror
-        </div>
+        </div> --}}
 
         <div class="form-group rounded-box">
             <label class="label" for="phone">Ekspektasi harga produk per sachet</label>
