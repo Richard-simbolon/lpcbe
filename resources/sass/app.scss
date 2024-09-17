@@ -192,9 +192,10 @@ header{
     background-position: top center;
     background-size: cover;
     padding-top: 15px;
-    height: fit-content;
-    min-height: 100vh;
-    max-height: max-content; 
+    height: 100vh;
+    // height: fit-content;
+    // min-height: 100vh;
+    // max-height: max-content; 
     overflow: hidden;
     position: relative;
     padding: 15px;
@@ -203,6 +204,7 @@ header{
         position: absolute;
         left: 0;
         top: 160px;
+        z-index: 22;
     }
     .right-img{
         width: 70px;
@@ -251,11 +253,14 @@ header{
     }
 }
 .prod-ds{
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 70%;
-    margin: 0 auto 50px;
+    // margin: -35px auto 50px;
     background-color: transparent;
     height: fit-content;
-    position: relative;
+    position: absolute;
     &.survey{
         .box-white{
             margin-top: 30px;
@@ -474,7 +479,8 @@ header{
     .home{
         .main-logo{
             display: flex;
-            margin: -60px auto 0;
+            margin: -150px auto 0;
+            width: 500px!important;
         }
         &.end{
             .left-img{
@@ -512,11 +518,8 @@ header{
             justify-content: center;
             font-size: 14px;
         }
-        .main-logo{
-            width: 500px!important;
-        }
         .prod-ds{
-            top: 30%;
+            // top: 30%;
             width: 35%;
         }
     }
@@ -633,7 +636,7 @@ header{
             width: 500px!important;
         }
         .prod-ds{
-            top: 60%;
+            // top: 60%;
             width: 25%;
         }
     }

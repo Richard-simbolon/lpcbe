@@ -52,7 +52,7 @@
                 </a>
             </div>
         </div>
-        <div class="prod-ds survey">
+        {{-- <div class="prod-ds survey">
             <div class="box-lg"></div>
             <img class="survey" src="/img/dummy.png" alt="">
             <div class="box-white">
@@ -61,7 +61,7 @@
                     <button class="w-100 btn btn-light-green">Ikuti Survey</button>
                 </a>
             </div>
-        </div>
+        </div> --}}
         <div class="copyright">© 2024 LARUTAN PENYEGAR CAP BADAK. ALL RIGHTS RESERVED.</div>
     </div>
     @endif

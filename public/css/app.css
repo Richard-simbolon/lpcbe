@@ -11135,11 +11135,7 @@ header {
   background-position: top center;
   background-size: cover;
   padding-top: 15px;
-  height: -moz-fit-content;
-  height: fit-content;
-  min-height: 100vh;
-  max-height: -moz-max-content;
-  max-height: max-content;
+  height: 100vh;
   overflow: hidden;
   position: relative;
   padding: 15px;
@@ -11150,6 +11146,7 @@ header {
   position: absolute;
   left: 0;
   top: 160px;
+  z-index: 22;
 }
 
 .home .right-img {
@@ -11204,12 +11201,14 @@ header {
 }
 
 .prod-ds {
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 70%;
-  margin: 0 auto 50px;
   background-color: transparent;
   height: -moz-fit-content;
   height: fit-content;
-  position: relative;
+  position: absolute;
 }
 
 .prod-ds.survey .box-white {
@@ -11462,7 +11461,8 @@ header {
 
   .home .main-logo {
     display: flex;
-    margin: -60px auto 0;
+    margin: -150px auto 0;
+    width: 500px !important;
   }
 
   .home.end .left-img {
@@ -11504,12 +11504,7 @@ header {
     font-size: 14px;
   }
 
-  .home .main-logo {
-    width: 500px !important;
-  }
-
   .home .prod-ds {
-    top: 30%;
     width: 35%;
   }
 
@@ -11642,7 +11637,6 @@ header {
   }
 
   .home .prod-ds {
-    top: 60%;
     width: 25%;
   }
 
