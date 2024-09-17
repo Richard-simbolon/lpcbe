@@ -17,6 +17,7 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -60,23 +61,29 @@
 
                 <!-- Nav Item - Pages Collapse Menu -->
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                        aria-expanded="true" aria-controls="collapseTwo">
-                        <i class="fas fa-fw fa-cog"></i>
+                    <a class="nav-link" href="/dashboard">
                         <span>Data Leads</span>
                     </a>
                     
                 </li>
 
-                <!-- Nav Item - Utilities Collapse Menu -->
                 <li class="nav-item">
+                    <a class="nav-link " href="admin/survey">
+                        
+                        <span>Survey</span>
+                    </a>
+                    
+                </li>
+
+                <!-- Nav Item - Utilities Collapse Menu -->
+                <!-- <li class="nav-item">
                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                         aria-expanded="true" aria-controls="collapseUtilities">
                         <i class="fas fa-fw fa-wrench"></i>
                         <span>User Admin</span>
                     </a>
                     
-                </li>
+                </li> -->
             </ul>
             <main class="py-4 w-100">
                 @yield('content')

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Lead;
+use App\Question;
 use Illuminate\Http\Request;
 use Yajra\DataTables\Facades\DataTables;
 
@@ -46,5 +47,32 @@ class AdminController extends Controller
                 return '<a href="#" class="btn btn-info btn-sm">Edit</a> <a href="#" class="btn btn-danger btn-sm">Delete</a>';
             })
             ->make(true);
+    }
+
+    public function survey()
+    {
+        // $data = [];
+
+        // $questions = Question::with(['answers' => function($query){
+        //     $query->withCount('survey');
+        // }])->get();
+        // // echo json_encode($questions);
+        // // exit;
+        // return view('admin_survey' , compact("data"));
+
+        $questions = Question::with(['answers' => function($query) {
+            $query->withCount('survey');
+        }])->get();
+
+        // Calculate total responses for each question
+        $questions->each(function ($question) {
+            $totalResponses = $question->answers->sum('survey_count');
+            $question->answers->transform(function ($answer) use ($totalResponses) {
+                $answer->percentage = $totalResponses > 0 ? number_format(($answer->survey_count / $totalResponses) * 100, 2) : 0;
+                return $answer;
+            });
+        });
+    
+        return view('admin_survey', ['questions' => $questions]);
     }
 }

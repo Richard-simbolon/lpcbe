@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LeadController;
+use App\Http\Controllers\SurveyController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,16 +27,23 @@ Route::get('/success', function () {
 Route::get('/form', function () {
     return view('form');
 });
-Route::get('/survey', function () {
-    return view('survey'); 
-});
+Route::get('/survey', [SurveyController::class , 'survey'])->name('survey');
+
 
 Auth::routes();
 
+Route::get('/register', function () {
+    return "";
+});
+
 Route::get('/dashboard', 'AdminController@index')->name('adminHome');
+Route::get('/admin/survey', 'AdminController@survey')->name('adminSurvey');
 
 Route::get('leads', [AdminController::class, 'index']);
+
 Route::get('leads-data', [AdminController::class, 'getLeadsData'])->name('leads.data');
 
 
 Route::post('leads', [LeadController::class, 'store'])->name('leads.store');
+
+Route::post('survey/store', [SurveyController::class, 'store'])->name('survey.store'); 
